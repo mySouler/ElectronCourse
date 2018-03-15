@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "start": "npm run dev",
+    "build": "node build/build.js",
+    "electron_dev": "npm run build && electron build/electron.js",
+    "electron_build": "electron-packager ./dist/ --platform=win32 --arch=x64 --icon=./src/assets/img/favicon.ico --overwrite"
+  }
+}
